@@ -60,7 +60,6 @@ public class BinarySearch {
 		}
 		return num ;
 	}
-
 }
 
 

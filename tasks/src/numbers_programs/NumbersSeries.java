@@ -1,6 +1,6 @@
 
 
-package numbers;
+package numbers_programs;
 
 import java.util.Scanner;
 

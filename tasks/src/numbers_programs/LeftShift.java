@@ -1,4 +1,4 @@
-package numbers;
+package numbers_programs;
 
 public class LeftShift {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package numbers;
+package numbers_programs;
 
 public class SwapTheNumWtAnotherVariable {
 	public static void main(String[] args) {
