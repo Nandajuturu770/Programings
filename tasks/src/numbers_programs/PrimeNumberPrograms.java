@@ -63,13 +63,11 @@ public class PrimeNumberPrograms {
      * otherwise false
      */
     public static boolean checkPrime(int number) {
-        boolean status = true;
         for (int i = 2; i <= number / 2; i++) {
             if (number % 2 == 0) {
-                status = false;
-                break;
+                return false;
             }
         }
-        return status && number > 1;
+        return number > 1;
     }
 }
