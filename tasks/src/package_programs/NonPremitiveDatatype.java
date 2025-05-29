@@ -1,4 +1,4 @@
-package programsforpackages;
+package package_programs;
 
 public class NonPremitiveDatatype {
 	public static void main(String[] args) {

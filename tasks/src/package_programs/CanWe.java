@@ -1,4 +1,4 @@
-package programsforpackages;
+package package_programs;
 
 public class CanWe {
 	String colName ;

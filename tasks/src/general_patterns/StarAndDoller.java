@@ -1,4 +1,4 @@
-package patterns;
+package general_patterns;
 
 public class StarAndDoller {
 	public static void main(String[] args) {

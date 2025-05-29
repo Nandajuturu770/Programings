@@ -1,4 +1,4 @@
-package programsforpackages;
+package package_programs;
 
 class Pack12 {
 	public static void main (String []args) {

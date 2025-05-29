@@ -2,7 +2,7 @@ package numbers_patterns;
 
 import java.util.Scanner;
 
-public class NumPrime3 {
+public class NumPrism3 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("enter your number : ");

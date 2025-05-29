@@ -1,4 +1,4 @@
-package srtrings;
+package string_programs;
 
 import java.util.Scanner;
 

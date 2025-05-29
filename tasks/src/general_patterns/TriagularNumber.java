@@ -1,4 +1,4 @@
-package patterns;
+package general_patterns;
 import java.util.Scanner;
 public class TriagularNumber {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package ThisAndSuper;
+package this_super_programs;
 
 public class KeyWordThis {
 	String name = "Nanda";

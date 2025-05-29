@@ -1,4 +1,4 @@
-package programsforpackages;
+package package_programs;
 
 public class ObjDrive {
 	//it is static non primitive data type : 

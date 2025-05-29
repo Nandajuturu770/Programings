@@ -1,4 +1,4 @@
-package srtrings;
+package string_programs;
 
 public class TOUpperCase {
 	String name = "Nandakiran jurutu";

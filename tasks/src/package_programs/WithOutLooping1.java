@@ -1,4 +1,4 @@
-package programsforpackages;
+package package_programs;
 import java.util.Scanner;
 public class WithOutLooping1 {
     public static void looping(int a, int z) {

@@ -1,4 +1,4 @@
-package programsforpackages;
+package package_programs;
 
 public class B extends A {
 	public void hi(int a) {

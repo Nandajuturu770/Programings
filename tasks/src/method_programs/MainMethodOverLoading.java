@@ -1,4 +1,4 @@
-package method;
+package method_programs;
 /**
  * Recurssion : the process of calling one method to another method is called as recurssion 
  * --> classifications of Recurssion are :

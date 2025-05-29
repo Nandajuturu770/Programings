@@ -1,4 +1,4 @@
-package encapsulation;
+package encapsulation_programs;
 
 public class Driver {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package programsforpackages;
+package package_programs;
 
 public class ConstructorMovie {
  public ConstructorMovie (String name , String lag , double bud ) {

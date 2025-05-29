@@ -1,7 +1,7 @@
 
 /* AUTO MORPISUM : A NUMBER IS SQUARE THE SQUARE NUMBER END WITH THAT NUMBE */
 
-package programsforpackages;
+package package_programs;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package patterns;
+package general_patterns;
 import java.util.Scanner; ;
 public class PCTriaglePrism1 {
 	public static void main(String[] args) {

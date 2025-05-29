@@ -1,4 +1,4 @@
-package patterns;
+package general_patterns;
 import java.util.Scanner;
 public class Pattern5Rand5C {
 	public static void main(String[] args) {

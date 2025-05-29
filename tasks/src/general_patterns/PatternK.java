@@ -1,4 +1,4 @@
-package patterns;
+package general_patterns;
 
 public class PatternK {
 	public static void main(String[] args) {

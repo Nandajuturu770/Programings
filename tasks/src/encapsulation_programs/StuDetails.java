@@ -3,7 +3,7 @@
  * private member we can access entair the class but not allow to another class 
  * ==> to get or modifies the date of private members of one class to another class 
  * ++ we should define the get and set methods on the same class*/
-package encapsulation;
+package encapsulation_programs;
 
 public class StuDetails {
 	private String sn ;

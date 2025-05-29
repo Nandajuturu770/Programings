@@ -1,4 +1,4 @@
-package method;
+package method_programs;
 
 public class VarArgMethod {
 	public static int add(int...d) {

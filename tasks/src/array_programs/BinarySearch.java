@@ -1,4 +1,4 @@
-package array;
+package array_programs;
 import java.util.Scanner;
 public class BinarySearch {
 	// main method to execution 

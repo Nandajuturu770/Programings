@@ -1,4 +1,4 @@
-package method;
+package method_programs;
 
 public class B extends A{
 	void nanda() {
