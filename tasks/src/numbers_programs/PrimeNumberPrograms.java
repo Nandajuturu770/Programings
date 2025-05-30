@@ -64,7 +64,7 @@ public class PrimeNumberPrograms {
      */
     public static boolean checkPrime(int number) {
         for (int i = 2; i <= number / 2; i++) {
-            if (number % 2 == 0) {
+            if (number % i == 0) {
                 return false;
             }
         }
