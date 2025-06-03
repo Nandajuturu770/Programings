@@ -7,7 +7,7 @@ public class OddNum {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("enter your first number : ");
 		int ini = sc.nextInt();
-		System.out.println("enter your final nunber : ");
+		System.out.println("enter your final number : ");
 		int fin = sc.nextInt();
 		evenNumbers(ini, fin);
 	}
