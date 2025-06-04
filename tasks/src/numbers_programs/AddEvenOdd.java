@@ -16,14 +16,14 @@ public class AddEvenOdd {
 	}
     // to first way to add the sum of even and odd index
 	public static void addEvenOdd(String str) {
-		// to change into the charater array
+		// to change into the charter array
 		char n [] = str.toCharArray();
 		// to add the value of even and odd index
 		int even = 0 ; int odd = 0 ;
 		for (int i = 0; i < n.length; i++) {
 			// to get character from array
 			char ch = n[i];
-			// to change character into  the orinical number 
+			// to change character into  the original number 
 			int num = ch - 48 ;
 			if(i%2==0)
 				even+=num;
@@ -35,7 +35,7 @@ public class AddEvenOdd {
 		System.out.println("the sum of the even index is : "+odd);
 		
 	}
-	// second way to solve the proble
+	// second way to solve the problem
 	public static void withString(String str ) {
 		// to add the even and odd index value 
 		int even = 0 , odd = 0 ;
@@ -45,7 +45,7 @@ public class AddEvenOdd {
 			char c = str.charAt(i);
 			// to change into real number 
 			int n = c - 48 ;
-			// now to add the value basend on the index
+			// now to add the value based on the index
 			if(i%2 == 0 )
 				even+=n ;
 			else
