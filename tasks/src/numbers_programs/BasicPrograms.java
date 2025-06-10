@@ -18,6 +18,12 @@ public class BasicPrograms {
         System.out.print("please enter final value to add all even and odd numbers in range :: ");
         int finalValue = scanner.nextInt();
         System.out.println("Sum is :: " + summationOfEvenAndOdd(initialValue, finalValue));
+        System.out.println("natural numbers :: ");
+        printNumbersWithRecursion(initialValue, finalValue);
+        System.out.print("\neven Numbers :: ");
+        getEvenNumberInRange(initialValue, finalValue);
+        System.out.print("\nodd numbers :: ");
+        getOddNumbersInRange(initialValue, finalValue);
     }
 
     /**
@@ -67,10 +73,10 @@ public class BasicPrograms {
      * @param finalValue   <code>int</code>
      */
     public static void printNumbersWithRecursion(int initialValue, int finalValue) {
-        if (initialValue >= finalValue) {
+        if (initialValue > finalValue) {
             return;
         }
-        System.out.print(initialValue++);
+        System.out.print(initialValue++ + ", ");
         printNumbersWithRecursion(initialValue, finalValue);
     }
 
@@ -102,14 +108,18 @@ public class BasicPrograms {
 }
 /*
 
-please enter number to check even :: 2
-2 true
-please enter number to check odd :: 8
-8 false
+please enter number to check even :: 8
+8 true
+please enter number to check odd :: 3
+3 true
 please enter initial value to add all even and odd numbers in range :: 1
-please enter final value to add all even and odd numbers in range :: 5
-sum of all even number in range is :: 6
-sum of all odd number in range is :: 9
-Sum is :: 15
+please enter final value to add all even and odd numbers in range :: 20
+sum of all even number in range is :: 110
+sum of all odd number in range is :: 100
+Sum is :: 210
+natural numbers ::
+1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+even Numbers :: 2, 4, 6, 8, 10, 12, 14, 16, 18, 20,
+odd numbers :: 1, 3, 5, 7, 9, 11, 13, 15, 17, 19,
 
  */
