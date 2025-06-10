@@ -11,8 +11,13 @@ public class SumPrograms {
         int number = scanner.nextInt();
         System.out.print("digit place :: ");
         int digitPosition = scanner.nextInt();
+        System.out.print("please enter the initial value to find the sum :: ");
+        int initialValue = scanner.nextInt();
+        System.out.print("please enter the final value to find the sum :: ");
+        int finalValue = scanner.nextInt();
         System.out.println("sum of digits of the given " + number + " number is :: " + sumOfDigitsOfNumber(number));
         System.out.println("required number is :: "+getPlacesValueDigits(number, digitPosition));
+        System.out.println("sum of the natural numbers :: "+sumOfNaturalNumbers(initialValue, finalValue));
     }
 
     /**
@@ -62,12 +67,30 @@ public class SumPrograms {
         }
         return tens * number;
     }
+
+    /**
+     * @description this method is used to get sum of the natural numbers.
+     * @param initialValue  <code>int</code>
+     * @param finalValue    <code>int</code>
+     * @return sumOfNumbers <code>int</code>
+     */
+    public static int sumOfNaturalNumbers(int initialValue, int finalValue){
+        int sum = 0;
+        for (int i = initialValue; i <= finalValue; i++) {
+            sum += i;
+        }
+        return sum;
+
+    }
 }
 /*
 
-please enter the number to find the sum of it's digits :: 123456
+please enter the number to find the sum of it's digits :: 35464
 digit place :: 4
-sum of digits of the given 123456 number is :: 21
-required number is :: 3456
+please enter the initial value to find the sum :: 1
+please enter the final value to find the sum :: 10
+sum of digits of the given 35464 number is :: 22
+required number is :: 5464
+sum of the natural numbers :: 55
 
  */
