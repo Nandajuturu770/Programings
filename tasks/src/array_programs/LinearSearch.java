@@ -19,7 +19,6 @@ public class LinearSearch {
             System.out.println(searchElement + " is presented in array");
         } else {
             System.out.println(searchElement + " is not presented in array");
-
         }
     }
 
@@ -48,4 +47,4 @@ your array element are below please check ::
 3, 5, 3, 1,
 please enter your to search : 3
 3 is presented in array
- */
+*/

@@ -74,7 +74,7 @@ public class BubbleSort {
      * @param array <code>int[]</code>
      */
     public static void printArrayElements(int[] array) {
-        System.out.println("your array element are below please check ::");
+        System.out.println("\nyour array element are below please check ::");
         for (int element : array) {
             System.out.print(element + ", ");
         }
