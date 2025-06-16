@@ -1,6 +1,6 @@
 package array_programs;
 
-import static array_programs.BubbleSort.*;
+import static array_programs.SortingArray.*;
 import java.util.Scanner;
 
 public class ArrayBasicPrograms {
@@ -13,6 +13,7 @@ public class ArrayBasicPrograms {
         printArrayReserve(array);
         int[] reverseArray = reverseArray(array);
         printArrayElements(reverseArray);
+        System.out.println("\nsum of the array elements is :: "+sumOfArrayElements(array));
     }
 
     /**
@@ -46,16 +47,31 @@ public class ArrayBasicPrograms {
         }
         return array;
     }
+
+    /**
+     * @description this method is used to sum the element of the given array.
+     * @param array <code>int[]</code>
+     * @return sum  <code>int</code>
+     */
+    public static int sumOfArrayElements(int array[]){
+        int sum = 0;
+        for(int arrayElement : array){
+            sum += arrayElement;
+        }
+        return sum;
+    }
 }
 /*
-please enter length of the array :: 4
-please enter 1 your number :: 2
-please enter 2 your number :: 1
+please enter length of the array :: 5
+please enter 1 your number :: 1
+please enter 2 your number :: 2
 please enter 3 your number :: 3
-please enter 4 your number :: 4
+please enter 4 your number :: 5
+please enter 5 your number :: 4
 your array element are below please check ::
-2, 1, 3, 4,
-reverse of array is  :: 4, 3, 1, 2
+1, 2, 3, 5, 4,
+reverse of array is  :: 4, 5, 3, 2, 1
 your array element are below please check ::
-4, 3, 1, 2,
+4, 5, 3, 2, 1,
+sum of the array elements is :: 15
  */

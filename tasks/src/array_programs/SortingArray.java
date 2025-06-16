@@ -2,7 +2,7 @@ package array_programs;
 
 import java.util.Scanner;
 
-public class BubbleSort {
+public class SortingArray {
 
     private static Scanner scanner = new Scanner(System.in);
 
