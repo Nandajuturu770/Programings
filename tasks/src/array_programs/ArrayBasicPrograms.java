@@ -13,7 +13,9 @@ public class ArrayBasicPrograms {
         printArrayReserve(array);
         int[] reverseArray = reverseArray(array);
         printArrayElements(reverseArray);
-        System.out.println("\nsum of the array elements is :: "+sumOfArrayElements(array));
+        System.out.println("\nsum of the array elements is :: " + sumOfArrayElements(array));
+        System.out.println("smallest numbers of array is :: " + findSmallestNumberOfArray(array));
+        System.out.println("biggest number of array is :: " + findBiggestNumberOfArray(array));
     }
 
     /**
@@ -53,25 +55,58 @@ public class ArrayBasicPrograms {
      * @param array <code>int[]</code>
      * @return sum  <code>int</code>
      */
-    public static int sumOfArrayElements(int array[]){
+    public static int sumOfArrayElements(int array[]) {
         int sum = 0;
-        for(int arrayElement : array){
+        for (int arrayElement : array) {
             sum += arrayElement;
         }
         return sum;
     }
+
+    /**
+     * @description this method is used to find the biggest number of the array.
+     * @param array          <code>int[]</code>
+     * @return biggestNumber <code>int</code>
+     */
+    public static int findBiggestNumberOfArray(int array[]) {
+        int biggestNumber = array[0];
+        for (int number : array) {
+            if (biggestNumber < number) {
+                biggestNumber = number;
+            }
+        }
+        return biggestNumber;
+    }
+
+    /**
+     * @description this method is used to find the smallest number of the
+     * array.
+     * @param array           <code>int[]</code>
+     * @return smallestNumber <code>int</code>
+     */
+    public static int findSmallestNumberOfArray(int array[]) {
+        int smallestNumber = array[0];
+        for (int number : array) {
+            if (smallestNumber > number) {
+                smallestNumber = number;
+            }
+        }
+        return smallestNumber;
+    }
 }
 /*
 please enter length of the array :: 5
-please enter 1 your number :: 1
+please enter 1 your number :: 3
 please enter 2 your number :: 2
-please enter 3 your number :: 3
+please enter 3 your number :: 4
 please enter 4 your number :: 5
-please enter 5 your number :: 4
+please enter 5 your number :: 7
 your array element are below please check ::
-1, 2, 3, 5, 4,
-reverse of array is  :: 4, 5, 3, 2, 1
+3, 2, 4, 5, 7,
+reverse of array is  :: 7, 5, 4, 2, 3
 your array element are below please check ::
-4, 5, 3, 2, 1,
-sum of the array elements is :: 15
- */
+7, 5, 4, 2, 3,
+sum of the array elements is :: 21
+smallest numbers of array is :: 2
+biggest number of array is :: 7
+*/
