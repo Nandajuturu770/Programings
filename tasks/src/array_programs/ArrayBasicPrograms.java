@@ -1,6 +1,8 @@
 package array_programs;
 
 import static array_programs.SortingArray.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class ArrayBasicPrograms {
@@ -16,6 +18,7 @@ public class ArrayBasicPrograms {
         System.out.println("\nsum of the array elements is :: " + sumOfArrayElements(array));
         System.out.println("smallest numbers of array is :: " + findSmallestNumberOfArray(array));
         System.out.println("biggest number of array is :: " + findBiggestNumberOfArray(array));
+        System.out.println("duplicate elements in array :: " + duplicateElementInArray(array));
     }
 
     /**
@@ -93,20 +96,48 @@ public class ArrayBasicPrograms {
         }
         return smallestNumber;
     }
+
+    /**
+     * @description this method is used to find the duplicate elements in the
+     * array.
+     * @param array             <code>int[]</code>
+     * @return listOfDuplicates <code>List</code>
+     */
+    public static List<Integer> duplicateElementInArray(int[] array) {
+        List<Integer> listOfDuplicates = new ArrayList<>();
+        boolean[] falseArray = new boolean[array.length];
+        for (int i = 0; i < array.length; i++) {
+            int duplicate = 1;
+            if (!falseArray[i]) {
+                for (int j = i + 1; j < array.length; j++) {
+                    if (array[i] == array[j]) {
+                        duplicate++;
+                        falseArray[j] = true;
+                    }
+                }
+            }
+            if (duplicate > 1) {
+                listOfDuplicates.add(array[i]);
+            }
+        }
+        return listOfDuplicates;
+
+    }
 }
 /*
 please enter length of the array :: 5
-please enter 1 your number :: 3
+please enter 1 your number :: 1
 please enter 2 your number :: 2
-please enter 3 your number :: 4
-please enter 4 your number :: 5
-please enter 5 your number :: 7
+please enter 3 your number :: 3
+please enter 4 your number :: 2
+please enter 5 your number :: 3
 your array element are below please check ::
-3, 2, 4, 5, 7,
-reverse of array is  :: 7, 5, 4, 2, 3
+1, 2, 3, 2, 3,
+reverse of array is  :: 3, 2, 3, 2, 1
 your array element are below please check ::
-7, 5, 4, 2, 3,
-sum of the array elements is :: 21
-smallest numbers of array is :: 2
-biggest number of array is :: 7
+3, 2, 3, 2, 1,
+sum of the array elements is :: 11
+smallest numbers of array is :: 1
+biggest number of array is :: 3
+duplicate elements in array :: [3, 2]
 */
