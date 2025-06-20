@@ -9,8 +9,9 @@ public class StringBasicPrograms {
         Scanner scanner = new Scanner(System.in);
         System.out.print("please enter your string ::");
         String word = scanner.nextLine();
-        System.out.println("reverse of the given '"+word+"' is :: "+reverseString(word));
-        System.out.println("the given word '"+word+"' is palindrome :: "+checkPalindromeString(word));
+        System.out.println("reverse of the given '" + word + "' is :: " + reverseString(word));
+        System.out.println("the given word '" + word + "' is palindrome :: " + checkPalindromeString(word));
+        System.out.println("the length of string is :: " + findLengthOfString(word));
     }
 
     /**
@@ -20,7 +21,7 @@ public class StringBasicPrograms {
      */
     public static String reverseString(String word) {
         StringBuilder stringBuilder = new StringBuilder();
-        for (int i = word.length()-1; i >= 0; i--) {
+        for (int i = word.length() - 1; i >= 0; i--) {
             stringBuilder.append(word.charAt(i));
         }
         return stringBuilder.toString();
@@ -31,18 +32,29 @@ public class StringBasicPrograms {
      * @param string  <code>String</code>
      * @return status <code>boolean</code>
      */
-    public static boolean checkPalindromeString(String string){
-        int lastIndex = string.length()-1;
-        for(int i = 0; i <= (string.length()-1)/2; i++){
-            if(string.charAt(i) != string.charAt(lastIndex--)){
+    public static boolean checkPalindromeString(String string) {
+        int lastIndex = string.length() - 1;
+        for (int i = 0; i <= (string.length() - 1) / 2; i++) {
+            if (string.charAt(i) != string.charAt(lastIndex--)) {
                 return false;
             }
-        } 
+        }
         return true;
+    }
+
+    /**
+     * @description this method is used to find the length of string with length
+     * method.
+     * @param string  <code>String</code>
+     * @return length <code>int</code>
+     */
+    public static int findLengthOfString(String string) {
+        return string.toCharArray().length;
     }
 }
 /*
 please enter your string ::rotator
 reverse of the given 'rotator' is :: rotator
 the given word 'rotator' is palindrome :: true
+the length of string is :: 7
 */
