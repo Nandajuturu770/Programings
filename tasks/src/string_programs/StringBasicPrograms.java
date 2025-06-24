@@ -12,6 +12,7 @@ public class StringBasicPrograms {
         System.out.println("reverse of the given '" + word + "' is :: " + reverseString(word));
         System.out.println("the given word '" + word + "' is palindrome :: " + checkPalindromeString(word));
         System.out.println("the length of string is :: " + findLengthOfString(word));
+        System.out.println("after removing space from givem '" + word + "' is :: " + removeSpacesBetweenWords(word));
     }
 
     /**
@@ -51,10 +52,25 @@ public class StringBasicPrograms {
     public static int findLengthOfString(String string) {
         return string.toCharArray().length;
     }
+
+    /**
+     * @description this method is used to remove spaces from the string.
+     * @param string              <code>String</code>
+     * @return spaceRemovedString <code>String</code>
+     */
+    public static String removeSpacesBetweenWords(String string) {
+        String[] wordsArray = string.split(" ");
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int i = 0; i < wordsArray.length; i++) {
+            stringBuilder.append(wordsArray[i]);
+        }
+        return stringBuilder.toString();
+    }
 }
 /*
-please enter your string ::rotator
-reverse of the given 'rotator' is :: rotator
-the given word 'rotator' is palindrome :: true
-the length of string is :: 7
+please enter your string ::changes never happen until you change.
+reverse of the given 'changes never happen until you change.' is :: .egnahc uoy litnu neppah reven segnahc
+the given word 'changes never happen until you change.' is palindrome :: false
+the length of string is :: 39
+after removing space from givem 'changes never happen until you change.' is :: changesneverhappenuntilyouchange.
 */
