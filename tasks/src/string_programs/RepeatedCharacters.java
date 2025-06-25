@@ -13,7 +13,10 @@ public class RepeatedCharacters {
         scanner = new Scanner(System.in);
         System.out.print("please enter your word to find the repeated characters :: ");
         String string = scanner.next();
+        System.out.print("please enter char to find occurrence of it in string :: ");
+        char character = scanner.next().charAt(0);
         System.out.println("repeated characters of given '" + string + "' is :: " + repeatedCharacters(string));
+        System.out.println("occurrence of the '"+character+"' is :: "+findOccurrenceOfCharacter(string, character)+" in '"+string+"'");
     }
 
     /**
@@ -40,8 +43,27 @@ public class RepeatedCharacters {
         }
         return charList;
     }
+
+    /**
+     * @description this method is used to find the occurrence of character in
+     * string.
+     * @param string      <code>String</code>
+     * @param character   <code>char</code>
+     * @return occurrence <code>int</code>
+     */
+    public static int findOccurrenceOfCharacter(String string, char character) {
+        int occurrence = 0;
+        for (int i = 0; i < string.length(); i++) {
+            if (string.charAt(i) == character) {
+                occurrence++;
+            }
+        }
+        return occurrence;
+    }
 }
 /*
-please enter your word to find the repeated characters :: aabbaaccddeefffgghhii
+please enter your word to find the repeated characters ::  aabbaaccddeefffgghhii
+please enter char to find occurrence of it in string :: f
 repeated characters of given 'aabbaaccddeefffgghhii' is :: [a, b, c, d, e, f, g, h, i]
+occurrence of the 'f' is :: 3 in 'aabbaaccddeefffgghhii'
 */
