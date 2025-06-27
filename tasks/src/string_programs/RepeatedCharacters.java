@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class RepeatedCharacters {
 
     public static Scanner scanner;
-
+    
     public static void main(String[] args) {
         // to get user from the user
         scanner = new Scanner(System.in);
