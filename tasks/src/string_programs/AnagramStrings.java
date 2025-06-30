@@ -3,52 +3,52 @@ package string_programs;
 import java.util.Scanner;
 
 public class AnagramStrings {
-	public static void main(String[] args) {
-		Scanner s = new Scanner(System.in);
-		System.out.println("enter your two Strings : ");
-		String st = s.next();
-		String st1 = s.next();
-		char [] ch = toCharactere( st );
-		char [] ch1 = toCharactere( st1 );
-		st = toString (ch);
-		st1 = toString (ch1);
-		//System.out.println(st+"\n"+st1);
-		boolean b = st.equals(st1);
-		if (b == true ) 
-			System.out.println("give two are \"anagram string \" ");
-	    else 
-            System.out.println("give two \" are not \" anagram string ");
-		
-	}
-	// Sting to charactere and into upper case ==> 
-	public static char [] toCharactere(String word ){
-		char ch [] = word.toCharArray();
-		for (int i = 0 ; i < ch.length ; i++ ) {
-			if (ch[i] >= 'a' && ch[i] <= 'z') {
-				ch[i]-=32;
-			}
-		}
-		char [] asc = toAscendingOrder( ch ) ;
-		return asc ;
-	}
-		// to ascending order ==>
-		public static char[] toAscendingOrder(char ch [] ) {
-			for (int i = 0 ; i < ch.length  ; i ++ ) {
-				for (int j = i+1  ; j < ch.length ; j ++ ) {
-					if (ch[i] > ch [j]) {
-						char temp = ch[i] ;
-					    ch[i] = ch[j] ;
-						ch[j] = temp ;
-					}
-				}
-			}
-			return ch ; 
-		}
-		public static String toString (char [] ch  ) {
-			String s = "";
-			for (int i = 0  ; i < ch.length  ; i++) {
-				s+=ch[i];
-			}
-            return s ;
-		}
+
+    public static void main(String[] args) {
+        // to read the data from the user
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("please enter first string :: ");
+        String string1 = scanner.nextLine();
+        System.out.print("please enter second string :: ");
+        String string2 = scanner.nextLine();
+        System.out.print("the given '" + string1 + ", and '" + string1 + "' are anagrams :: " + checkAnagrams(string1, string2));
+    }
+
+    /**
+     * @description this method is used to find the given strings are anagrams
+     * or not.
+     * @param string1 <code>String</code>
+     * @param string2 <code>String</code>
+     * @return status <code>boolean</code>
+     */
+    public static boolean checkAnagrams(String string1, String string2) {
+        if (string1.length() == string1.length()) {
+            return ascendingOrder(string1.toLowerCase()).equals(ascendingOrder(string2.toLowerCase()));
+        }
+        return false;
+    }
+
+    /**
+     * @description this method is used to give ascending order of string.
+     * @param string           <code>String</code>
+     * @return ascendingString <code>String</code>
+     */
+    public static String ascendingOrder(String string) {
+        char[] charArray = string.toCharArray();
+        for (int i = 0; i < charArray.length; i++) {
+            for (int j = 1; j < charArray.length; j++) {
+                if (charArray[i] > charArray[j]) {
+                    char temp = charArray[i];
+                    charArray[i] = charArray[j];
+                    charArray[j] = temp;
+                }
+            }
+        }
+        return new String(charArray);
+    }
 }
+/*
+please enter first string :: Heart
+please enter second string :: Earth
+the given 'Heart, and 'Heart' are anagrams :: true
+*/
