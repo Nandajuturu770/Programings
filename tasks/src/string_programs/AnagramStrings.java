@@ -11,7 +11,9 @@ public class AnagramStrings {
         String string1 = scanner.nextLine();
         System.out.print("please enter second string :: ");
         String string2 = scanner.nextLine();
-        System.out.print("the given '" + string1 + ", and '" + string1 + "' are anagrams :: " + checkAnagrams(string1, string2));
+        System.out.println("the given '" + string1 + ", and '" + string1 + "' are anagrams :: " + checkAnagrams(string1, string2));
+        System.out.println("ascending order of string '" + string1 + "'' is :: " + ascendingOrder(string1));
+        System.out.println("descending order of string '" + string2 + "' is :: " + descendingOrder(string2));
     }
 
     /**
@@ -36,8 +38,27 @@ public class AnagramStrings {
     public static String ascendingOrder(String string) {
         char[] charArray = string.toCharArray();
         for (int i = 0; i < charArray.length; i++) {
-            for (int j = 1; j < charArray.length; j++) {
+            for (int j = i + 1; j < charArray.length; j++) {
                 if (charArray[i] > charArray[j]) {
+                    char temp = charArray[i];
+                    charArray[i] = charArray[j];
+                    charArray[j] = temp;
+                }
+            }
+        }
+        return new String(charArray);
+    }
+
+    /**
+     * @description this method is used to give descending order of string.
+     * @param string            <code>String</code>
+     * @return descendingString <code>String</code>
+     */
+    public static String descendingOrder(String string) {
+        char[] charArray = string.toCharArray();
+        for (int i = 0; i < charArray.length; i++) {
+            for (int j = i + 1; j < charArray.length; j++) {
+                if (charArray[i] < charArray[j]) {
                     char temp = charArray[i];
                     charArray[i] = charArray[j];
                     charArray[j] = temp;
@@ -48,7 +69,9 @@ public class AnagramStrings {
     }
 }
 /*
-please enter first string :: Heart
-please enter second string :: Earth
-the given 'Heart, and 'Heart' are anagrams :: true
-*/
+please enter first string :: heart
+please enter second string :: earth
+the given 'heart, and 'heart' are anagrams :: true
+ascending order of string 'heart'' is :: aehrt
+descending order of string 'earth' is :: trhea
+ */
