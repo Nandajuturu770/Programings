@@ -13,8 +13,12 @@ public class Matrix {
         int rows = scanner.nextInt();
         System.out.print("please enter no of columns of array :: ");
         int columns = scanner.nextInt();
-        int[][] array2D = getTwoDimensionalArray(rows, columns);
-        print2dArray(array2D);
+        int[][] matrix1 = getTwoDimensionalArray(rows, columns);
+        print2dArray(matrix1);
+        int[][] matrix2 = getTwoDimensionalArray(rows, columns);
+        print2dArray(matrix2);
+        System.out.println("sum of the two matrix is :: ");
+        print2dArray(addMatrix(matrix1, matrix2));
     }
 
     /**
@@ -46,23 +50,40 @@ public class Matrix {
             System.err.println();
         }
     }
+
+    /**
+     * @description this method is used to add matrixes.
+     * @param matrix1 <code>int[][]</code>
+     * @param matrix2 <code>int[][]</code>
+     * @return sum    <code>int[][]</code>
+     */
+    public static int[][] addMatrix(int[][] matrix1, int[][] matrix2) {
+        if (matrix1.length == matrix2.length) {
+            for (int i = 0; i < matrix1.length; i++) {
+                for (int j = 0; j < matrix1[i].length; j++) {
+                    matrix1[i][j] = matrix1[i][j] + matrix2[i][j];
+                }
+            }
+        }
+        return matrix1;
+    }
 }
 /*
-please enter no of rows of array :: 3
-please enter no of columns of array :: 4
+please enter no of rows of array :: 2
+please enter no of columns of array :: 2
 please enter '1' row and column '1' element :: 1
 please enter '1' row and column '2' element :: 2
-please enter '1' row and column '3' element :: 3
-please enter '1' row and column '4' element :: 4
-please enter '2' row and column '1' element :: 4
-please enter '2' row and column '2' element :: 3
-please enter '2' row and column '3' element :: 2
-please enter '2' row and column '4' element :: 1
-please enter '3' row and column '1' element :: 5
-please enter '3' row and column '2' element :: 6
-please enter '3' row and column '3' element :: 7
-please enter '3' row and column '4' element :: 8
-1 2 3 4
-4 3 2 1
-5 6 7 8
+please enter '2' row and column '1' element :: 3
+please enter '2' row and column '2' element :: 4
+1 2
+3 4
+please enter '1' row and column '1' element :: 4
+please enter '1' row and column '2' element :: 3
+please enter '2' row and column '1' element :: 2
+please enter '2' row and column '2' element :: 1
+4 3
+2 1
+sum of the two matrix is ::
+5 5
+5 5
 */
