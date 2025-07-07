@@ -28,6 +28,9 @@ public class Matrix {
      * @return 2D-array <code>int[][]</code>
      */
     public static int[][] getTwoDimensionalArray(int rows, int columns) {
+        if (scanner == null) {
+            scanner = new Scanner(System.in);
+        }
         int[][] array = new int[rows][columns];
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
@@ -86,4 +89,4 @@ please enter '2' row and column '2' element :: 1
 sum of the two matrix is ::
 5 5
 5 5
-*/
+ */
