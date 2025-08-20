@@ -8,7 +8,7 @@ public class ExtractVowel {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("please enter our string :: ");
+        System.out.print("please enter our string :: ");
         String string = scanner.next();
         System.out.println(extractVowelFromString(string));
     }
@@ -49,3 +49,7 @@ public class ExtractVowel {
         return stringBuilder.toString();
     }
 }
+/*
+please enter our string :: NandakiranforYou
+[A, I, O, U]
+*/
