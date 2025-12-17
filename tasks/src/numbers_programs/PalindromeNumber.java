@@ -24,6 +24,7 @@ public class PalindromeNumber {
         }
         return number == reverseNumber;
     }
+}
 
 /*
 please enter your number to check palindrome :: 12321

@@ -15,7 +15,7 @@ public class NumbersSeries {
 		int a = in.nextInt();
 		System.out.println("enter your second number : ");
 		int b = in.nextInt();
-		System.out.println("enter yout power value : ");
+		System.out.println("enter your power value : ");
 		int p = in.nextInt();
 		int res = 0 ;
 		for (int i = 0; i < p; i++) {
@@ -32,6 +32,5 @@ public class NumbersSeries {
 			res *= num ;
 		}
 		return res;
-
 	}
 }

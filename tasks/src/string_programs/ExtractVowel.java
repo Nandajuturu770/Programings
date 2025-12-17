@@ -50,6 +50,6 @@ public class ExtractVowel {
     }
 }
 /*
-please enter our string :: NandakiranforYou
+please enter our string :: nandakiranYou
 [A, I, O, U]
 */

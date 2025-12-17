@@ -7,7 +7,7 @@ public class ArmStrong {
 		// to read the data from the user
 		Scanner s = new Scanner(System.in);
 		// to display msg to user
-		System.out.println("please enter your number to chech the Arm Strongh or no : ");
+		System.out.println("please enter your number to check the Arm Strong or no : ");
 		int n = s.nextInt();
 		boolean b  = isArmStrong(n);
 		// to display the result 
