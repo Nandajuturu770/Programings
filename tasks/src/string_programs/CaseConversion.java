@@ -2,7 +2,7 @@ package string_programs;
 
 import java.util.Scanner;
 
-public class CaseConvertion {
+public class CaseConversion {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
@@ -47,4 +47,4 @@ public class CaseConvertion {
 Please enter your word to change upper case :: Java Program Language
 Upper Case :: JAVA PROGRAM LANGUAGE
 Lower Case :: java program language
- */
+*/
