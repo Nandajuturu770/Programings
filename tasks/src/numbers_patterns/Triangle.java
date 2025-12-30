@@ -24,3 +24,11 @@ public class Triangle {
         
     }
 }
+/**
+Please enter your number :: 5
+ *  *  *  *  *
+   *  *  *  *
+     *  *  *
+       *  *
+         *
+ */
