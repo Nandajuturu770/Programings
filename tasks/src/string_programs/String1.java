@@ -16,18 +16,17 @@ public class String1 {
 		// to count the value
 		int c = 0 ;
 		for(int i = 1 ; i <= name.length() ; i ++) {
-			String d = "";
+			StringBuilder  stringBuilder = new StringBuilder();
 			for (int j = 1; j <= i; j++) {
 				if(c<name.length()) {
-					d+=name.charAt(c);
+					stringBuilder.append(name.charAt(c));
 					c++;
 				}
 				else {
-					System.out.println(d);
-					return ;
+					System.out.println();
 				}
 			}
-			System.out.println(d);
+			System.out.println(stringBuilder.toString());
 		}
 	}
 }
