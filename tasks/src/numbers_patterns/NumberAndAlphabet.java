@@ -16,7 +16,7 @@ public class NumberAndAlphabet {
     }
 
     /**
-     * @description this method is used to print A1B2C3 patter.
+     * This method is used to print A1B2C3 patter.
      * @param rows <code>int</code>
      */
     public static void patternA1B2C3(int rows) {
@@ -35,7 +35,7 @@ public class NumberAndAlphabet {
     }
 
     /**
-     * @description this method is used to print the pattern one row alphabet
+     * This method is used to print the pattern one row alphabet
      * and next row numbers
      * @param rows    <code>int</code>
      * @param columns <code>int</code>
@@ -55,6 +55,7 @@ public class NumberAndAlphabet {
         }
     }
 }
+
 /*
 please enter number of rows :: 5
 please enter number of columns :: 6
@@ -68,4 +69,4 @@ A B C D E F
 G H I J K L
 7 8 9 10 11 12
 M N O P Q R
- */
+*/
