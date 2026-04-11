@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class CharPrism {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("enter your number");
+		System.out.println("enter your number :");
 		int n = sc.nextInt();
 		System.out.println("enter your char from where do you want :");
 		char ch = sc.next().charAt(0);
@@ -35,3 +35,16 @@ public class CharPrism {
 		}	
 	}
 }
+
+/**
+ * enter your number : 8
+ * enter your char from where do you want : a
+ *               a
+ *             a b a
+ *           a b c b a
+ *         a b c d c b a
+ *       a b c d e d c b a
+ *     a b c d e f e d c b a
+ *   a b c d e f g f e d c b a
+ * a b c d e f g h g f e d c b a
+ */
