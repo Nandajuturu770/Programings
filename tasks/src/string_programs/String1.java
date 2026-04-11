@@ -30,3 +30,10 @@ public class String1 {
 		}
 	}
 }
+/*
+enter the String value : Nandakiran
+N
+an
+dak
+iran
+*/
