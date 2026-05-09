@@ -3,7 +3,9 @@ package numbers_patterns;
 import java.util.Scanner;
 
 public class Matrix {
+
 	public static void main(String[] args) {
+
 		Scanner s = new Scanner(System.in);
 		System.out.println("please enter the your number :");
 		int n = s.nextInt();
@@ -16,8 +18,9 @@ public class Matrix {
 						System.out.print(odd+"\t");
 						odd+=2 ;
 					}
-					else
-						System.out.print(0+"\t");
+					else {
+						System.out.print(0 + "\t");
+					}
 				}
 			}
 			else {
@@ -33,7 +36,6 @@ public class Matrix {
 				}
 			}
 			System.out.println();
-
 		}
 	}
 }
